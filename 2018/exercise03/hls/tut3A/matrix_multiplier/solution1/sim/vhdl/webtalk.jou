@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed Dec 25 16:19:05 2019
+# Process ID: 20570
+# Current directory: /home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/2018/exercise03/hls/tut3A/matrix_multiplier/solution1/sim/vhdl
+# Command line: wbtcv -mode batch -source /home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/2018/exercise03/hls/tut3A/matrix_multiplier/solution1/sim/vhdl/xsim.dir/matrix_mult/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/2018/exercise03/hls/tut3A/matrix_multiplier/solution1/sim/vhdl/webtalk.log
+# Journal file: /home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/2018/exercise03/hls/tut3A/matrix_multiplier/solution1/sim/vhdl/webtalk.jou
+#-----------------------------------------------------------
+source /home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/2018/exercise03/hls/tut3A/matrix_multiplier/solution1/sim/vhdl/xsim.dir/matrix_mult/webtalk/xsim_webtalk.tcl -notrace

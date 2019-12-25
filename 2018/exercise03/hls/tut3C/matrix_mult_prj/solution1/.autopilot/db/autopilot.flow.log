@@ -1,0 +1,98 @@
+INFO-FLOW: Workspace /home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/2018/exercise03/hls/tut3C/matrix_mult_prj/solution1 opened at Wed Dec 25 16:58:26 -03 2019
+Execute     set_part xc7z020clg400-1 
+Execute       add_library xilinx/zynq/zynq:xc7z020:clg400:-1 
+Execute         get_default_platform 
+Execute         license_isbetapart xc7z020 
+Command         license_isbetapart done; error code: 1; 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq 
+Execute           source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.lib 
+Execute             source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute               source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.lib 
+Execute               source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.lib 
+Execute               source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.lib 
+Execute               source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.lib 
+Execute               source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.lib 
+Execute             source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.lib 
+Execute             source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.lib 
+Execute             source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.lib 
+Execute             source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute           source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_old.lib 
+Execute           source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_vivado.lib 
+Execute           source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute             source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute           get_default_platform 
+Execute           config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute           config_chip_info -quiet -speed medium 
+Execute           source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute             source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute             source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute               source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute               source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute             source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute         source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq.gen 
+Execute           source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/common/virtex.gen 
+Execute             source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.gen 
+Execute               source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/plb46.gen 
+Execute               source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/fsl.gen 
+Execute               source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/axi4.gen 
+Execute               source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute                 source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.gen 
+Execute                 source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.gen 
+Execute               source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute               source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute               source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute               source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/util.gen 
+Execute               source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfft.gen 
+Command               ap_source done; 0.12 sec.
+Execute               source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/ip/xfir.gen 
+Command             ap_source done; 0.17 sec.
+Execute             source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.gen 
+Command           ap_source done; 0.17 sec.
+Command         ap_source done; 0.17 sec.
+Execute         get_default_platform 
+Execute         config_chip_info -quiet -resource  {SLICE 13300}  {LUT 53200}     {FF 106400} {DSP48E 220}   {BRAM 280}  
+Execute         config_chip_info -quiet -speed slow 
+Command       add_library done; 0.21 sec.
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+Execute         open_platform DefaultPlatform 
+Execute         import_lib /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute           source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv7.lib 
+Execute             source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_hp.lib 
+Execute           source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv.hlp 
+Execute             source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx.hlp 
+Execute               source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/common/target_info.tcl 
+Execute               source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute                 source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/maxi.hlp 
+Execute                 source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute               source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/common/dsp48.hlp 
+Execute           source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_hp.hlp 
+Execute         source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute           source /home/carlos/Xilinx/Vivado/2018.2/common/technology/xilinx/common/xilinx_fpv6.gen 
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+Execute       get_default_platform 
+Command     set_part done; 0.29 sec.
+Execute     create_clock -period 5 
+Execute       config_clock -quiet -name default -period 5 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 5ns.
+Execute     csim_design 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute       is_encrypted /home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/2018/exercise03/hls/tut3C/matrix_mult_test.cpp 
+Execute       is_xip /home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/2018/exercise03/hls/tut3C/matrix_mult_test.cpp 
+Execute       is_encrypted /home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/2018/exercise03/hls/tut3C/matrix_mult.h 
+Execute       is_xip /home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/2018/exercise03/hls/tut3C/matrix_mult.h 
+Execute       is_encrypted /home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/2018/exercise03/hls/tut3C/matrix_mult.cpp 
+Execute       is_xip /home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/2018/exercise03/hls/tut3C/matrix_mult.cpp 
+Execute       get_default_platform 
+Execute       source run_sim.tcl 
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command     csim_design done; 0.65 sec.
+Execute     cleanup_all 

@@ -1,0 +1,5 @@
+   Build using "/home/carlos/Xilinx/Vivado/2018.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_matrix_mult.cpp
+   Compiling matrix_mult_test.cpp_pre.cpp.tb.cpp
+   Compiling matrix_mult.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

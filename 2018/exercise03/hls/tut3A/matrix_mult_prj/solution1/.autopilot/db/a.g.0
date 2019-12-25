@@ -1,0 +1,4 @@
+#!/bin/sh
+lli=${LLVMINTERP-lli}
+exec $lli \
+    /home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/2018/exercise03/hls/tut3A/matrix_mult_prj/solution1/.autopilot/db/a.g.0.bc ${1+"$@"}

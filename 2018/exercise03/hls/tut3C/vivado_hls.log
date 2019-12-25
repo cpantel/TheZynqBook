@@ -1,0 +1,5 @@
+INFO: [HLS 200-10] Running '/home/carlos/Xilinx/Vivado/2018.2/bin/unwrapped/lnx64.o/vivado_hls'
+INFO: [HLS 200-10] For user 'carlos' on host 'a10' (Linux_x86_64 version 4.4.0-128-generic) on Wed Dec 25 16:58:42 -03 2019
+INFO: [HLS 200-10] On os Linux Mint 18.3 Sylvia
+INFO: [HLS 200-10] In directory '/home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/2018/exercise03/hls/tut3C'
+ERROR: [HLS 200-70] Project directory does not exist.
