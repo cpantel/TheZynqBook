@@ -9998,3 +9998,12 @@ java.lang.NullPointerException
 
 !ENTRY com.xilinx.sdk.utils 0 0 2019-12-25 12:40:07.589
 !MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-1
+
+!ENTRY com.xilinx.sdk.utils 1 0 2019-12-25 12:41:57.131
+!MESSAGE Executed Webtalk command
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-25 12:41:57.168
+!MESSAGE XSCT Command: [disconnect tcfchan#1], Thread: Thread-203
+
+!ENTRY com.xilinx.sdk.utils 0 0 2019-12-25 12:41:57.178
+!MESSAGE XSCT command with result: [disconnect tcfchan#1], Result: [null, ]. Thread: Thread-203

@@ -51,3 +51,4 @@ con
 ----------------End of Script----------------
 
 15:07:46 INFO  : Launch script is exported to file '/home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/2018/exercise01/exercise01.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_led_test.elf_on_local.tcl'
+12:42:08 INFO  : Disconnected from the channel tcfchan#1.
