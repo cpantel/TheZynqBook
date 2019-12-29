@@ -1,0 +1,5 @@
+<annotationInfo>
+<item  id="14" filename="../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco.cpp" linenumber="430" name="p_Val2_1" contextFuncName="nco" moduleName="nco" rtlName="p_Val2_1_fu_67_p2" latency="0" BRAM="-1" DSP="-1" FF="0" LUT="23" fileDirectory="/home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/pynq-z2/2018.2"><\/item>
+<item  id="16" filename="../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco.cpp" linenumber="432" name="address_V" contextFuncName="nco" moduleName="nco" rtlName="address_V_fu_79_p4" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/pynq-z2/2018.2"><\/item>
+<item  id="17" filename="../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco.cpp" linenumber="434" name="tmp_6" contextFuncName="nco" moduleName="nco" rtlName="tmp_6_fu_89_p1" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/pynq-z2/2018.2"><\/item>
+</annotationInfo>

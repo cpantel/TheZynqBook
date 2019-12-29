@@ -1,0 +1,135 @@
+
+
+================================================================
+== Vivado HLS Report for 'nco'
+================================================================
+* Date:           Sun Dec 29 13:38:48 2019
+
+* Version:        2018.2 (Build 2258646 on Thu Jun 14 20:25:20 MDT 2018)
+* Project:        exercise04c
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     6.331|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    1|    1|    1|    1|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 6.33>
+ST_1 : Operation 3 [1/1] (1.00ns)   --->   "%step_size_V_read = call i16 @_ssdm_op_Read.s_axilite.i16(i16 %step_size_V)"   --->   Operation 3 'read' 'step_size_V_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%p_Val2_s = load i16* @temp_V, align 2" [../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco.cpp:430]   --->   Operation 4 'load' 'p_Val2_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (2.07ns)   --->   "%p_Val2_1 = add i16 %p_Val2_s, %step_size_V_read" [../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco.cpp:430]   --->   Operation 5 'add' 'p_Val2_1' <Predicate = true> <Delay = 2.07> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "store i16 %p_Val2_1, i16* @temp_V, align 2" [../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco.cpp:430]   --->   Operation 6 'store' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%address_V = call i12 @_ssdm_op_PartSelect.i12.i16.i32.i32(i16 %p_Val2_1, i32 4, i32 15)" [../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco.cpp:432]   --->   Operation 7 'partselect' 'address_V' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%tmp_6 = zext i12 %address_V to i64" [../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco.cpp:434]   --->   Operation 8 'zext' 'tmp_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%sine_lut_V_addr = getelementptr [4096 x i16]* @sine_lut_V, i64 0, i64 %tmp_6" [../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco.cpp:434]   --->   Operation 9 'getelementptr' 'sine_lut_V_addr' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [2/2] (3.25ns)   --->   "%sine_lut_V_load = load i16* %sine_lut_V_addr, align 2" [../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco.cpp:434]   --->   Operation 10 'load' 'sine_lut_V_load' <Predicate = true> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 16> <Depth = 4096> <ROM>
+
+State 2 <SV = 1> <Delay = 4.25>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16* %sine_sample_V), !map !74"   --->   Operation 11 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i16 %step_size_V), !map !78"   --->   Operation 12 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([4 x i8]* @nco_str) nounwind"   --->   Operation 13 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [13 x i8]* @p_str, i32 0, i32 0, [1 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str3, [1 x i8]* @p_str3, [1 x i8]* @p_str3, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str3, [1 x i8]* @p_str3) nounwind" [../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco.cpp:422]   --->   Operation 14 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str3, [1 x i8]* @p_str3, [1 x i8]* @p_str3, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str3, [1 x i8]* @p_str3) nounwind" [../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco.cpp:422]   --->   Operation 15 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16* %sine_sample_V, [10 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str3, [1 x i8]* @p_str3, [1 x i8]* @p_str3, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str3, [1 x i8]* @p_str3) nounwind" [../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco.cpp:422]   --->   Operation 16 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i16 %step_size_V, [10 x i8]* @p_str4, i32 0, i32 0, [1 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str3, [1 x i8]* @p_str3, [1 x i8]* @p_str3, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str3, [1 x i8]* @p_str3) nounwind" [../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco.cpp:422]   --->   Operation 17 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/2] (3.25ns)   --->   "%sine_lut_V_load = load i16* %sine_lut_V_addr, align 2" [../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco.cpp:434]   --->   Operation 18 'load' 'sine_lut_V_load' <Predicate = true> <Delay = 3.25> <Core = "ROM_nP">   --->   Core 48 'ROM_nP' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load'> <Ports = 0> <Width = 16> <Depth = 4096> <ROM>
+ST_2 : Operation 19 [1/1] (1.00ns)   --->   "call void @_ssdm_op_Write.s_axilite.i16P(i16* %sine_sample_V, i16 %sine_lut_V_load)" [../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco.cpp:434]   --->   Operation 19 'write' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 20 [1/1] (0.00ns)   --->   "ret void" [../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco.cpp:435]   --->   Operation 20 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 6.33ns
+The critical path consists of the following:
+	s_axi read on port 'step_size_V' [8]  (1 ns)
+	'add' operation ('__Val2__', ../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco.cpp:430) [14]  (2.08 ns)
+	'getelementptr' operation ('sine_lut_V_addr', ../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco.cpp:434) [18]  (0 ns)
+	'load' operation ('sine_lut_V_load', ../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco.cpp:434) on array 'sine_lut_V' [19]  (3.25 ns)
+
+ <State 2>: 4.25ns
+The critical path consists of the following:
+	'load' operation ('sine_lut_V_load', ../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco.cpp:434) on array 'sine_lut_V' [19]  (3.25 ns)
+	s_axi write on port 'sine_sample_V' (../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco.cpp:434) [20]  (1 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

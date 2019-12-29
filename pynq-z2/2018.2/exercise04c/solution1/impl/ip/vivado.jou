@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Dec 29 13:39:46 2019
+# Process ID: 8160
+# Current directory: /home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/pynq-z2/2018.2/exercise04c/solution1/impl/ip
+# Command line: vivado -notrace -mode batch -source run_ippack.tcl
+# Log file: /home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/pynq-z2/2018.2/exercise04c/solution1/impl/ip/vivado.log
+# Journal file: /home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/pynq-z2/2018.2/exercise04c/solution1/impl/ip/vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace

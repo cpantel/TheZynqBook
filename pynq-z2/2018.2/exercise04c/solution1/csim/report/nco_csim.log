@@ -1,0 +1,9 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco_tb.cpp in debug mode
+   Compiling ../../../../../../../../../../PlanDeEstudios2018/ZYNQ/sources/hls_nco/nco.cpp in debug mode
+   Generating csim.exe
+File open for writing.
+Sample output to file complete.
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
