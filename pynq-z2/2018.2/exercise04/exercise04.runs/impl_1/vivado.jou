@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sun Dec 29 12:39:46 2019
+# Process ID: 30889
+# Current directory: /home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/pynq-z2/2018.2/exercise04/exercise04.runs/impl_1
+# Command line: vivado -log led_test_system_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source led_test_system_wrapper.tcl -notrace
+# Log file: /home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/pynq-z2/2018.2/exercise04/exercise04.runs/impl_1/led_test_system_wrapper.vdi
+# Journal file: /home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/pynq-z2/2018.2/exercise04/exercise04.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source led_test_system_wrapper.tcl -notrace
