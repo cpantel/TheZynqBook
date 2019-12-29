@@ -1,0 +1,9 @@
+10:56:30 INFO  : Launching XSDB server: xsdb -n /home/carlos/Xilinx/SDK/2015.4/scripts/xsdb/xsdb/xsdb-server.tcl
+10:56:39 INFO  : XSDB server has started successfully.
+10:56:41 INFO  : Processing command line option -hwspec /home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/pynq-z2/2015.4/Exercise04/Exercise04.sdk/led_test_system_wrapper.hdf.
+10:59:40 INFO  : Saving repository preferences.
+10:59:40 INFO  : Reading in cores from local repositories: 
+		 /home/carlos/Desktop/REPO/github/cpantel/TheZynqBook/pynq-z2/2015.4/ip_repo/led_controller_1.0
+10:59:40 INFO  : Cleaning BSP projects in the workspace.
+11:01:01 INFO  : No changes in MSS file content so not generating sources.
+11:05:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
